@@ -1,0 +1,11 @@
+name: NcCommunity
+main: nx.community.core.Core
+version: 0.0.1
+author: [weinaite]
+description: This is a plugin for interacting between players. Have team and friends... function.
+
+commands:
+    nct:
+      description: Team system of player user commands.
+    ncf:
+      description: Friend system of player user commands.

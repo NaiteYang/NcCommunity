@@ -1,0 +1,60 @@
+Help:
+  Separat: "&9&m==========================================================="
+  Info: "&e/nct info    &f- &7查詢某隊伍資訊"
+  Join: "&e/nct join    &f- &7加入某隊伍"
+  Leave: "&e/nct leave   &f- &7離開當前隊伍"
+  Create: "&e/nct create  &f- &7創建一個隊伍"
+  Accept: "&e/nct accept  &f- &7接受某隊伍邀請"
+  Kick: "&e/nct kick    &f- &7剔除隊伍某隊員, 前提您必須是隊長"
+  Invite: "&e/nct invite  &f- &7邀請某玩家, 前提您必須是隊長"
+  Promote: "&e/nct promote &f- &7轉讓隊長權給某隊員, 前提您必須是隊長"
+  Disband: "&e/nct disband &f- &7解散隊伍, 前提您必須是隊長"
+  AlterName: "&e/nct aname   &f- &7更改隊伍名稱, 前提您必須是隊長"
+  AlterPassword: "&e/nct apass   &f- &7更換隊伍密碼, 前提您必須是隊長"
+  
+Commands:
+  ErrorValue: "&c✘ &7請輸入正確的指令, 可透過 &6/nct help &7來查詢指令"
+  
+TeamSystem:
+  Info:
+    SeparatUp: "&2&m============&6 隊伍資訊 &2&m============"
+    TeamName: "&a隊伍名稱: &7"
+    TeamLeader: "&a隊伍領隊: &7"
+    TeamPassword: "&a隊伍密碼: &7"
+    TeamMembers: "&a隊伍成員: &7"
+    MembersRow: "&f - &7"
+    SeparatDown: "&2&m==================================="
+    
+  Correct:
+    CreateTeam: "&a✔ &7已成功創建隊伍 "
+    DisbandTeam: "&a✔ &7已成功解散隊伍 "
+    LeaveTeam: "&a✔ &7已成功離開隊伍 "
+    AlterPassword: "&a✔ &7已成功更改密碼 "
+    AlterName: "&a✔ &7已成功更改名稱 "
+    AlterLeader: "&a✔ &7已成功更改隊長 "
+    JoinTeam: "&a✔ &7已成功加入隊伍 "
+    InvitePlayer: "&a✔ &7已成功寄送邀請 "
+    
+  Warn:
+    PlayerJoinTeam: "&6&l[!] &f{player} &7加入您的隊伍 "
+    PlayerLeaveTeam: "&6&l[!] &f{player} &7離開您的隊伍 "
+    PromoteForLeader: "&6&l[!] &7您被提升為隊長 "
+    KickOutTeam: "&6&l[!] &7您已經從隊伍名單中被剔除成員 "
+    DisbandTeam: "&6&l[!] &7您的隊長將隊伍進行解散 "
+    AlterLeader: "&6&l[!] &f{player} &7被更改為隊長 "
+    TeamInvite: "&6&l[!] &7您接收到一則來自 &f{player} &7的組隊邀請通知"
+    AlreadyJoinTeam: "&c✘ &7您當前已經擁有隊伍 "
+    AlreadyExistTeam: "&c✘ &7您當前創建的隊伍已存在 "
+    AlreadyOnTeam: "&c✘ &7該位玩家已經在隊伍名單上了"
+    NotJoinTeam: "&c✘ &7您目前尚未加入一個隊伍 "
+    NotCreateTeam: "&c✘ &7您目前尚未創建一個隊伍 "
+    NotLeader: "&c✘ &7您不是該隊伍的隊長"
+    NotExistTeam: "&c✘ &7您查詢或加入的該隊伍不存在 "
+    NotExistInvite: "&c✘ &7您接受的該邀請不存在"
+    NotOnline: "&c✘ &7您邀請的玩家不在線上或不存在該伺服器 "
+    KickNotExist: "&c✘ &7您剔除的隊員尚未加入或不存在名單內 "
+    PromoteNotExist: "&c✘ &7您提升為隊長的隊員尚未加入或不存在名單內 "
+    LeaderLeave: "&c✘ &7您目前是該隊伍的隊長, 請使用&6 /nct disband &7解散隊伍 &f[&a+&f] "
+    ErrorPassword: "&c✘ &7您輸入的隊伍密碼是錯誤的, 請嘗試重新輸入正確的密碼 "
+ 
+  
