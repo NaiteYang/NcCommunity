@@ -1,16 +1,13 @@
-package nx.community.cmd;
+package nx.community.util;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
-import nx.community.file.MessagesYml;
-import nx.community.util.ColorSwitch;
-import nx.community.util.MessagesButtonJson;
+import nx.community.data.MessagesData;
 
 public class CommandMsg
 {
-	private static YamlConfiguration yaml = (YamlConfiguration) MessagesYml.getConfig();
-	
+	private static YamlConfiguration yaml = (YamlConfiguration) MessagesData.getConfig();
 	public static void reload(){ColorSwitch.replaceColor(yaml);}
 	
 	public static void TeamsHelp(Player p)

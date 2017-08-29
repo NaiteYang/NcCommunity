@@ -1,4 +1,4 @@
-package nx.community.file;
+package nx.community.data;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,10 +9,10 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import nx.community.core.Core;
 
-public class MessagesYml
+public class MessagesData
 {
 	static Core main;
-	public MessagesYml(Core core){main = core;}
+	public MessagesData(Core core){main = core;}
 	public static YamlConfiguration mC = null;
 	public static File mF = null;
 	

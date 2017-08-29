@@ -1,8 +1,7 @@
-package nx.community.util;
+package nx.community.data;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.bukkit.entity.Player;
 
 public class TeamSetting

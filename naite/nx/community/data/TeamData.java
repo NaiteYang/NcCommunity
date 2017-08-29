@@ -1,25 +1,19 @@
-package nx.community.util;
+package nx.community.data;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import nx.community.core.Core;
-import nx.community.file.MessagesYml;
+import nx.community.util.MessagesButtonJson;
 
 public class TeamData
-{
-	Core main;
-	public TeamData(Core core){main = core;}
+{	
+	private static YamlConfiguration yaml = (YamlConfiguration) MessagesData.getConfig();
 	
-	private static YamlConfiguration yaml = (YamlConfiguration) MessagesYml.getConfig();
-	public static void reload(){ColorSwitch.replaceColor(yaml);}
-	
-	private static HashMap<String, TeamSetting> teamData = new HashMap<>();
-	private static HashMap<Player, String> hasTeam = new HashMap<>();
+	public static HashMap<String, TeamSetting> teamData = new HashMap<>();
+	public static HashMap<Player, String> hasTeam = new HashMap<>();
 	private static HashMap<Player, List<Player>> inviteMsg = new HashMap<>();
 	
 	public static void removeTeamData(Player p)

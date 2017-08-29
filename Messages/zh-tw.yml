@@ -52,9 +52,13 @@ TeamSystem:
     NotExistTeam: "&c✘ &7您查詢或加入的該隊伍不存在 "
     NotExistInvite: "&c✘ &7您接受的該邀請不存在"
     NotOnline: "&c✘ &7您邀請的玩家不在線上或不存在該伺服器 "
+    NotDamageMembers: "&c✘ &7您不能傷害與您同屬隊伍的隊員"
     KickNotExist: "&c✘ &7您剔除的隊員尚未加入或不存在名單內 "
     PromoteNotExist: "&c✘ &7您提升為隊長的隊員尚未加入或不存在名單內 "
     LeaderLeave: "&c✘ &7您目前是該隊伍的隊長, 請使用&6 /nct disband &7解散隊伍 &f[&a+&f] "
     ErrorPassword: "&c✘ &7您輸入的隊伍密碼是錯誤的, 請嘗試重新輸入正確的密碼 "
- 
+    
+FriendSystem:
+  Warn:
+    NotOnline: "&c✘ &7您邀請的玩家不在線上或不存在該伺服器 "
   

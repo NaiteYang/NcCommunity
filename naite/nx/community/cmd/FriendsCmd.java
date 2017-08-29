@@ -5,6 +5,9 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import nx.community.data.FriendData;
+import nx.community.util.CommandMsg;
+
 public class FriendsCmd implements CommandExecutor {
 
 	@Override
@@ -42,6 +45,11 @@ public class FriendsCmd implements CommandExecutor {
 					 args[0].equalsIgnoreCase("remove") || args[0].equalsIgnoreCase("re")))
 				{
 					CommandMsg.ErrorCmdValue(p);
+					return true;
+				}
+				if(args[0].equalsIgnoreCase("invite") || args[0].equalsIgnoreCase("in"))
+				{
+					FriendData.getFriendInvite(args[1], p);
 					return true;
 				}
 			}

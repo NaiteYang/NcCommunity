@@ -4,12 +4,14 @@ import org.bukkit.ChatColor;
 import org.bukkit.Server;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
-import nx.community.cmd.CommandMsg;
 import nx.community.cmd.FriendsCmd;
 import nx.community.cmd.TeamsCmd;
-import nx.community.event.AsyncPlayerChat;
-import nx.community.file.MessagesYml;
-import nx.community.util.TeamData;
+import nx.community.data.MessagesData;
+import nx.community.data.PlayerData;
+import nx.community.data.TeamData;
+import nx.community.event.EntityDamageByEntity;
+import nx.community.event.PlayerJoin;
+import nx.community.util.CommandMsg;
 
 public class Core extends JavaPlugin
 {
@@ -39,16 +41,17 @@ public class Core extends JavaPlugin
 	
 	public void reload()
 	{
-		MessagesYml.reload();
+		MessagesData.reload();
 		CommandMsg.reload();
+		PlayerData.loadAllPlayerData();
 	}
 	public void files()
 	{
-		MessagesYml.getConfig().options().copyDefaults(true);
+		MessagesData.getConfig().options().copyDefaults(true);
 	}
 	public void save()
 	{
-		MessagesYml.saveConfig();
+		MessagesData.saveConfig();
 	}
 	public void commands()
 	{
@@ -57,7 +60,8 @@ public class Core extends JavaPlugin
 	}
 	public void events()
 	{
-		getServer().getPluginManager().registerEvents(new AsyncPlayerChat(),this);
+		getServer().getPluginManager().registerEvents(new EntityDamageByEntity(),this);
+		getServer().getPluginManager().registerEvents(new PlayerJoin(),this);
 	}
 	public void remove()
 	{
