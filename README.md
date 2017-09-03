@@ -1,4 +1,4 @@
-# NcProperty 
+# NcCommunity
 This is a community plugin in Minecraft. 
 It can run on the server.
  
